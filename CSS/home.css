@@ -1,3 +1,80 @@
 body {
   background: #f6f5f7;
 }
+
+section {
+  margin-top: 80px;
+}
+
+.moving-text1, .moving-text2, .moving-text3 {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  letter-spacing: 5px;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+
+.moving-text1::before{
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  height: 100%;
+  color: orangered;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid orangered;
+  overflow: hidden;
+  animation: animate1 6s linear infinite;
+}
+
+@keyframes animate1 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  90%, 70%{
+    width: 23.2%;
+  }
+}
+
+.moving-text2::before{
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  height: 100%;
+  color: blue;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid blue;
+  overflow: hidden;
+  animation: animate2 6s linear infinite;
+}
+
+@keyframes animate2 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  90%, 70%{
+    width: 44.5%;
+  }
+}
+
+.moving-text3::before{
+  content: attr(data-text);
+  position: absolute;
+  width: 0;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate3 6s linear infinite;
+}
+
+@keyframes animate3 {
+  0%, 10%, 100% {
+    width: 0;
+  }
+  90%, 70%{
+    width: 37.5%;
+  }
+}
