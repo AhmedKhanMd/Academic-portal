@@ -33,19 +33,19 @@
           <h1>Create Account</h1>
           <input type="text" placeholder="Name" autocomplete="on" maxlength="30" autofocus required>
           <input type="text" placeholder="Roll Number" autocomplete="on" maxlength="10" required>
-          <input type="email" placeholder="Email" autocomplete="on" required>
-          <input type="password" placeholder="Password" maxlength="15" required>
-          <button>Sign Up</button>
+          <input name="Email" type="email" placeholder="Email" autocomplete="on" required>
+          <input name="Password" type="password" placeholder="Password" maxlength="15" required>
+          <button type="submit">Sign Up</button>
         </form>
       </div>
 
       <div class="form-container sign-in-container"> <!-- Sign In container -->
-        <form action="login" method="post">
+        <form action="/login" method="post">
           <h1>Sign in</h1>
-          <input type="email" placeholder="Email" autocomplete="on" autofocus required>
-          <input type="password" placeholder="Password" maxlength="15" required>
+          <input name="Email" type="email" placeholder="Email" autocomplete="on" autofocus required>
+          <input name="Password" type="password" placeholder="Password" maxlength="15" required>
           <br>
-          <button>Sign In</button>
+          <button type="submit">Sign In</button>
         </form>
       </div>
 
