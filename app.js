@@ -98,6 +98,11 @@ app.get("/interviewprep", function(req, res){
     res.render("interviewprep"); 
 }) 
 
+app.get("/team", function(req, res){
+
+    res.render("team");
+}) 
+
 app.get("/support", function(req, res){
     res.render()
 })

@@ -27,9 +27,8 @@
   </head>
 
   <body>
-
     <div class="container-fluid">
-      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
@@ -63,10 +62,15 @@
                 <a class="nav-link mx-5" href="academics">Academics</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-5" href="interviewprep">Interview preparation</a>
+                <a class="nav-link mx-5" href="interviewprep"
+                  >Interview preparation</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-5" href="team">Team</a>
               </li>
             </ul>
-            <form action="/logout" method="POST" class="d-flex">   
+            <form action="/logout" method="POST" class="d-flex">
               <button class="btn btn-outline-primary ms-5" type="submit">
                 Logout
               </button>
@@ -76,96 +80,66 @@
       </nav>
     </div>
 
-    <section id = "events">
-
-      <div class = "container">
-
-        <div class = "row">
-
-          <h2 class="moving-text1" data-text="Events"> Events </h2>
-
+    <section id="events">
+      <div class="container">
+        <div class="row">
+          <h2 class="moving-text1" data-text="Events">Events</h2>
         </div>
 
-        <div class = "row">
-
+        <div class="row">
           <ul>
-
             <li>A</li>
             <li>B</li>
             <li>C</li>
             <li>D</li>
             <li>E</li>
-          
           </ul>
-        
         </div>
-        
       </div>
-
     </section>
 
-    <section id = "examination-news">
-
-      <div class = "container">
-
-        <div class = "row">
-
-          <h2 class="moving-text2" data-text="Examination"> Examination </h2>
-
+    <section id="examination-news">
+      <div class="container">
+        <div class="row">
+          <h2 class="moving-text2" data-text="Examination">Examination</h2>
         </div>
 
-        <div class = "row">
-
+        <div class="row">
           <ul>
-
             <li>A</li>
             <li>B</li>
             <li>C</li>
             <li>D</li>
             <li>E</li>
-          
           </ul>
-        
         </div>
-        
       </div>
-
     </section>
 
-    <section id = "placement-news">
-
-      <div class = "container">
-
-        <div class = "row">
-
-          <h2 class="moving-text3" data-text="Placement"> Placement </h2>
-
+    <section id="placement-news">
+      <div class="container">
+        <div class="row">
+          <h2 class="moving-text3" data-text="Placement">Placement</h2>
         </div>
 
-        <div class = "row">
-
+        <div class="row">
           <ul>
-
             <li>A</li>
             <li>B</li>
             <li>C</li>
             <li>D</li>
             <li>E</li>
-          
           </ul>
-        
         </div>
-        
       </div>
-
     </section>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="BotTest"
-  agent-id="8c5080a9-50f0-4c20-91f5-eb94da6c8c11"
-  language-code="en"
-></df-messenger>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="BotTest"
+      agent-id="8c5080a9-50f0-4c20-91f5-eb94da6c8c11"
+      language-code="en"
+    ></df-messenger>
     <!-- Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
