@@ -82,6 +82,15 @@ app.get("/interviewprep", function(req, res){
      
 }) 
 
+app.get("/dbms",function(req,res){
+    if(auth.currentUser !== null){
+        res.render("dbms");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+})
+
 app.get("/team", function(req, res){
     if(auth.currentUser !== null){
         res.render("team");
