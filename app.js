@@ -54,23 +54,41 @@ app.post("/login", function(req, res){
 });
 
 app.get("/home",function(req, res){
-
-    res.render("home"); 
+    if(auth.currentUser !== null){
+        res.render("home");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
 }) 
 
 app.get("/academics", function(req, res){
-
-    res.render("academics");
+    if(auth.currentUser !== null){
+        res.render("academics");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+    
 }) 
 
 app.get("/interviewprep", function(req, res){
-
-    res.render("interviewprep"); 
+    if(auth.currentUser !== null){
+        res.render("interviewprep");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+     
 }) 
 
 app.get("/team", function(req, res){
-
-    res.render("team");
+    if(auth.currentUser !== null){
+        res.render("team");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
 }) 
 
 app.get("/support", function(req, res){
@@ -79,8 +97,18 @@ app.get("/support", function(req, res){
 
 
 app.post("/logout", function(req, res){
-
-    res.render("index");
+    if(auth.currentUser !== null){
+        auth.signOut().then(()=>{
+            console.log("user signed out"); 
+            res.redirect("/");
+        }).catch(error=>{
+            console.log(error); 
+            res.redirect("/");
+        });
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
 })
 
 
