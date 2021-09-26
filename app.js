@@ -119,8 +119,14 @@ app.post("/logout", function(req, res){
         res.render("index",{message:"session expired"});
     }
 })
+ 
+app.get("/cse1", function(req, res){
+    res.render("cse1");
+})
 
-
+app.get("/dbmsnotes",function(req, res){
+    res.render("dbmsnotes");
+})
 
 app.listen(3000, function(){
     console.log("server started on port 3000");
