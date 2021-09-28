@@ -1,169 +1,125 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- font-awesome plugin -->
-    <script
-      src="https://kit.fontawesome.com/27ab7d05ba.js"
-      crossorigin="anonymous"
-    ></script>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- font-awesome plugin -->
+  <script src="https://kit.fontawesome.com/27ab7d05ba.js" crossorigin="anonymous"></script>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" type="text/css" href="CSS/team.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <title>👨‍🎓 Study Today</title>
-  </head>
+  <!-- My CSS -->
+  <link rel="stylesheet" type="text/css" href="CSS/team.css" />
 
-  <body>
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="Images/logo.png"
-              alt=""
-              width="30"
-              height="30"
-              class="d-inline-block align-text-top"
-            />
-            Studytoday
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link mx-5" aria-current="page" href="home"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-5" href="academics">Academics</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-5" href="interviewprep"
-                  >Interview preparation</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active mx-5" href="#">Team</a>
-              </li>
-            </ul>
-            <form action="/logout" method="POST" class="d-flex">
-              <button class="btn btn-outline-primary ms-5" type="submit">
-                Logout
-              </button>
-            </form>
-          </div>
+  <title>👨‍🎓 Study Today</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="Images/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top" />
+          Studytoday
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-5 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link mx-5" aria-current="page" href="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-5" href="academics">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-5" href="interviewprep">Interview preparation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active mx-5" href="#">Team</a>
+            </li>
+          </ul>
+          <form action="/logout" method="POST" class="d-flex">
+            <button class="btn btn-outline-primary ms-5" type="submit">
+              Logout
+            </button>
+          </form>
         </div>
-      </nav>
-    </div>
-
-    <div class="team-area">
+      </div>
+    </nav>
+    <div class="team-section">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="single-team">
-              <div class="img-area">
-                <img
-                  src="Images/ahmed.jpeg"
-                  class="img-responsive"
-                  alt=""
-                />
+          <div class="col-12 col-lg-8 offset-lg-2">
+            <h2>Meet our Team</h2>
+            <p>B tech undergraduates pursuing Computer Science and Engineering at VNR VJIET.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <div class="photo">
+                <img src="Images/Ahmed.jpg" class="img-fluid">
               </div>
-              <div class="img-text">
-                <h4>Md Ahmed Khan</h4>
-                <h5>Student @4 year</h5>
-              </div>
+              <h3>Mohammed Ahmed Khan</h3>
+              <hr>
+              <h5>Student @2022</h5>
+              <!-- <p></p> -->
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="single-team">
-              <div class="img-area">
-                <img
-                  src="Images/manikanta.jpg"
-                  class="img-responsive"
-                  alt=""
-                  height="310px"
-                />
+          <div class="col-md-3">
+            <div class="team-member">
+              <div class="photo">
+                <img src="Images/balaji.jpg" class="img-fluid">
               </div>
-              <div class="img-text">
-                <h4>Manikanta</h4>
-                <h5>Student @4 year</h5>
-              </div>
+              <h3>Balaji Pulugujju</h3>
+              <hr>
+              <h5>Student @2022</h5>
+              <!-- <p></p> -->
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="single-team">
-              <div class="img-area">
-                <img
-                  src="Images/balaji.jpg"
-                  class="img-responsive"
-                  alt=""
-                  height="310px"
-                />
+          <div class="col-md-3">
+            <div class="team-member">
+              <div class="photo">
+                <img src="Images/manikanta.jpg" class="img-fluid">
               </div>
-              <div class="img-text">
-                <h4>Balaji</h4>
-                <h5>Student @4 year</h5>
-              </div>
+              <h3>Dirisala Manikanta</h3>
+              <hr>
+              <h5>Student @2022</h5>
+              <!-- <p></p> -->
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="single-team">
-              <div class="img-area">
-                <img
-                  src="Images/sravan.jpg"
-                  class="img-responsive"
-                  alt=""
-                  height="310px"
-                />
+          <div class="col-md-3">
+            <div class="team-member">
+              <div class="photo">
+                <img src="Images/sravan.jpg" class="img-fluid" >
               </div>
-              <div class="img-text">
-                <h4>Sravan</h4>
-                <h5>Student @4 year</h5>
-              </div>
+              <h3>Sravan Kumar Reddy</h3>
+              <hr>
+              <h5>Student @2022</h5>
+              <!-- <p></p> -->
             </div>
           </div>
         </div>
-      </div> 
-       
-    </div>  
+      </div>
+    </div>
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Study-Today"
-  agent-id="fbdfa849-efb8-401b-916f-884c538e02e6"
-  language-code="en"
-></df-messenger>
+    <df-messenger intent="WELCOME" chat-title="Study-Today" agent-id="fbdfa849-efb8-401b-916f-884c538e02e6"
+      language-code="en"></df-messenger>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
 
     <!-- <script src="login.js"></script> External js file -->
-  </body>
+</body>
+
 </html>
