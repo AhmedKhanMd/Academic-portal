@@ -1,5 +1,5 @@
 body {
-  background: #dfeff3;
+  background: mintcream;
 }
 
 section {
@@ -92,12 +92,18 @@ section {
   left: 100%;
   margin-top: -1px;
 }
+
+.nav-item {
+  font-weight: bolder;
+}
+
 /* academics css */
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 350px;
+  width: 500px;
+  height: 300px;
   perspective: 1000px;
+  margin: 10px;
 }
 
 .flip-card-inner {
@@ -123,7 +129,7 @@ section {
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: lightblue;
   color: black;
 }
 
@@ -134,5 +140,10 @@ section {
 }
 .but{
   border-radius: 50%;
-  padding: 16px;
+  padding: 10px;
+  margin: 2px;
+}
+
+a {
+  text-decoration: none;
 }

@@ -5,59 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <style>
-      body {
-        height: 100vh;
-        background: linear-gradient(to bottom, #dfeff3 50%, purple 50%);
-        background: -webkit-linear-gradient(to bottom, #dfeff3 50%, purple 50%);
-        background: -moz-linear-gradient(to bottom, #dfeff3 50%, purple 50%);
-        background: -o-linear-gradient(to bottom, #dfeff3 50%, purple 50%);
-      }
-      .team-area {
-        padding-top: 5%;
-      }
-      .single-team {
-        box-shadow: 0px 7px 7px 2px rgba(0, 0, 0, 0.1);
-        background-color: white;
-        margin-bottom: 10px;
-        margin-left: 10px;
-      }
-      .img-area {
-        overflow: hidden;
-        position: relative;
-      }
-      .img-area img {
-        width: 100%;
-      }
-      .img-area:hover img {
-        transform: scale(1.2);
-      }
-      .img-area img {
-        transition: all 0.4s ease 0s;
-      }
-      @media (max-width: 768px) {
-        .img-area img {
-          display: inline-block;
-        }
-      }
-      
-      .img-text {
-        padding: 25px;
-        color: black;
-        text-align: center;
-      }
-      .img-text h4 {
-        margin: 0 0 5px;
-        font-size: 20px;
-        font-family: sans-serif;
-        letter-spacing: 5px;
-      }
-      .img-text h5 {
-        font-size: 15px;
-        color: #545154;
-      }
-    </style>
     <!-- font-awesome plugin -->
     <script
       src="https://kit.fontawesome.com/27ab7d05ba.js"
@@ -73,7 +20,7 @@
     />
 
     <!-- My CSS -->
-    <!-- <link rel="stylesheet" type="text/css" href="CSS/home.css" /> -->
+    <link rel="stylesheet" type="text/css" href="CSS/team.css" />
 
     <title>👨‍🎓 Study Today</title>
   </head>
@@ -119,7 +66,7 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-5" href="#">Team</a>
+                <a class="nav-link active mx-5" href="#">Team</a>
               </li>
             </ul>
             <form action="/logout" method="POST" class="d-flex">
