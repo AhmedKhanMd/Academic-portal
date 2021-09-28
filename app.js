@@ -146,6 +146,16 @@ app.get("/osnotes",function(req, res){
     else{
         res.render("index",{message:"session expired"});
     }
+}) 
+
+
+app.get("/os",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("os");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
 })
 
 app.listen(3000, function(){
