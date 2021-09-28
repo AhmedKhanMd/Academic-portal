@@ -120,12 +120,42 @@ app.post("/logout", function(req, res){
     }
 })
  
-app.get("/cse1", function(req, res){
-    res.render("cse1");
+app.get("/cse1", function(req, res){ 
+    if(auth.currentUser !== null){
+        res.render("cse1");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+
 })
 
 app.get("/dbmsnotes",function(req, res){
-    res.render("dbmsnotes");
+    if(auth.currentUser !== null){
+        res.render("dbmsnotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+}) 
+
+app.get("/osnotes",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("osnotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+}) 
+
+
+app.get("/os",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("os");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
 })
 
 app.listen(3000, function(){
