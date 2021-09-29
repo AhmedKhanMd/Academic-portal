@@ -134,7 +134,7 @@ section {
 }
 
 .flip-card-back {
-  background-color: navy;
+  background-color: white;
   color: white;
   transform: rotateY(180deg);
 }
@@ -142,6 +142,11 @@ section {
   border-radius: 50%;
   padding: 10px;
   margin: 2px;
+  width: 100px;
+  height: 100px;
+  color: darkred;
+  background-color: lightcyan;
+  font-weight: bolder;
 }
 
 a {
