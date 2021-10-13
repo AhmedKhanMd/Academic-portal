@@ -130,9 +130,9 @@ app.get("/cse1", function(req, res){
 
 })
 
-app.get("/dbmsnotes",function(req, res){
+app.get("/cnnotes",function(req, res){
     if(auth.currentUser !== null){
-        res.render("dbmsnotes");
+        res.render("cnnotes");
     }
     else{
         res.render("index",{message:"session expired"});
@@ -146,8 +146,70 @@ app.get("/osnotes",function(req, res){
     else{
         res.render("index",{message:"session expired"});
     }
+})  
+
+app.get("/cdnotes",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("cdnotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
 }) 
 
+app.get("/wtnotes",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("wtnotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+}) 
+
+app.get("/lpnotes",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("lpnotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+}) 
+
+app.get("/ainotes",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("ainotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+}) 
+
+app.get("/mlnotes",function(req, res){
+    if(auth.currentUser !== null){
+        res.render("mlnotes");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+}) 
+
+app.get("/cn", function(req, res){
+    if(auth.currentUser !== null){
+        res.render("cn");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+})
+
+app.get("/oops", function(req, res){
+    if(auth.currentUser !== null){
+        res.render("oops");
+    }
+    else{
+        res.render("index",{message:"session expired"});
+    }
+})
 
 app.get("/os",function(req, res){
     if(auth.currentUser !== null){
